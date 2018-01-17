@@ -1,0 +1,8 @@
+mixin photo(url)
+	a(href=url, data-fancybox= attributes.gallery ? "gallery":"")
+		img(src= attributes.small ? attributes.small:url)
+
+mixin photo-frame(url)
+	.col-md-3
+		.photo-frame
+			+photo(url)(small=attributes.small, gallery=true)

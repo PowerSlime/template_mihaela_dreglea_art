@@ -1,0 +1,191 @@
+@import "_functions"
+@import "_var"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+body
+	color: #333
+	font-family: $font-base
+	font-size: $font-size-base
+	line-height: em(24px, $font-size-base)
+	min-width: 320px
+	overflow-x: hidden
+	position: relative
+
+.hidden
+	display: none
+
+h1
+	font-weight: 900
+	font-size: $font-size-h1
+
+h2
+	@extend h1
+
+
+// Custom styles here
+.introduction
+	background: url("../img/person.jpg") center 100%/cover no-repeat
+
+.intro-container
+	&> .row
+		min-height: 100vh
+
+	color: white
+	text-transform: uppercase
+
+	mark
+		background: none
+		color: $color-secondary
+
+
+	.buttons
+		text-align: center
+
+		.examples
+			margin-top: 50px
+			a
+				display: block
+				border: 2px solid $color-secondary
+				padding: 8px 0
+				color: $color-secondary
+				opacity: .5
+				transition: .2s
+
+				&:hover
+					text-decoration: none
+					opacity: 1
+
+		.contacts
+			@extend .examples
+			a
+				background: $color-secondary
+				color: $color-primary
+
+
+.gallery
+	padding-top: 85px
+	padding-bottom: 85px
+	background: $color-secondary
+
+.gallery-container
+	.photo-frame
+		margin-top: 15px
+
+		a
+			&:focus
+				text-decoration: none
+				outline: none
+
+		img
+			background: white
+
+			width: 100%
+			height: 255px
+			object-fit: cover
+
+			border-radius: 10px
+			box-shadow: 0 2px 5px rgba(0, 0, 0, .25)
+			transition: .2s
+
+			&:hover
+				box-shadow: none
+
+
+.about-me
+	padding-top: 80px
+	padding-bottom: 80px
+	background: $color-primary
+
+.about-me-container
+	color: $color-text
+
+	.portrait
+		margin: 20px 0
+
+		img
+			width: 100%
+			height: auto
+
+	.description
+		text-transform: uppercase
+		text-align: center
+
+		h2
+			color: $color-secondary
+
+
+.map-container
+	max-width: 100%
+
+#map-frame
+	width: 100%
+	height: 80vh
+
+
+
+.contacts-block
+	padding-top: 50px
+	padding-bottom: 50px
+	background: $color-primary
+
+.contacts-container
+	.block
+		color: $color-text
+		text-align: center
+		text-transform: uppercase
+
+		a
+			display: block
+			padding: 25px 0
+			color: $color-text
+			transition: .2s
+
+			&:hover
+				color: $color-secondary
+				text-decoration: none
+
+		.text
+			@extend a
+
+
+.watermark
+	padding-top: 20px
+	padding-bottom: 20px
+	background: $color-watermark
+
+.watermark-container
+	color: $color-text
+	text-transform: uppercase
+	text-align: center
+	font-size: $font-size-watermark
+
+	a
+		color: $color-secondary
+
+		&:hover
+			text-decoration: none
+
+//ALWAYS END
+@import "_media.sass"
