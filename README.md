@@ -6,7 +6,7 @@ My first HTML template. Built using **gulp** with *imagemin*, *jade* and *sass*.
 ![Photo preview](https://github.com/PowerSlime/template_mihaela_dreglea_art/blob/master/preview.png)
 
 ## Demo
-There is a [demo](https://powerslime.github.io/template_mihaela_dreglea_art/dist/).
+There is a [demo](https://powerslime.github.io/template_mihaela_dreglea_art/).
 
 ## P.S.
 I'll be happy for any feedback ;-) About the code too :D
